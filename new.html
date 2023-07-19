@@ -5,14 +5,14 @@
     <title>Submit Name</title>
     <script>
       function displayText() {
-        var input = document.getElementById("inputText").value;
+        var input = document.getElementById("input").value;
         if (/\d/.test(input)) { // Check if input contains any numbers
           showAlert("Please do not insert numbers, letters only please.");
           return;
         }
         var customText = "Your submitted name is: " + input;
         showAlert(customText);
-        document.getElementById("inputText").value = ""; // Clear the input field
+        document.getElementById("input").value = ""; // Clear the input field
       }
 
       function showAlert(message) {
